@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>课堂活动材料卡 · AI创新实践</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      main {
+        max-width: 1080px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .card {
+        border: 1px dashed #9aaca8;
+        border-radius: 12px;
+        padding: 22px;
+        break-inside: avoid;
+      }
+      .card h3 {
+        margin-bottom: 12px;
+      }
+      .card p {
+        font-size: 16px;
+      }
+      .ruled {
+        min-height: 85px;
+        border-bottom: 1px solid #ccc;
+        margin: 15px 0;
+      }
+      .print-btn {
+        margin: 18px 0;
+      }
+      @media (max-width: 700px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media print {
+        .cards {
+          gap: 12px;
+        }
+        .card {
+          padding: 16px;
+        }
+        h2 {
+          break-after: avoid;
+        }
+        .panel {
+          break-inside: auto;
+        }
+        a {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="title-row">
+        <div>
+          <div class="eyebrow">READY FOR THE CLASSROOM</div>
+          <h1>课堂活动材料卡</h1>
+          <p class="subtle">
+            可直接投屏或使用浏览器打印。所有案例为教学自编；规则卡为虚构，不代表学校真实规定。
+          </p>
+        </div>
+        <a class="btn" href="./#teacher">返回教师备课台</a>
+      </div>
+      <p class="hint">
+        打印方法：浏览器菜单 → 打印。无需AI账号。每个小组一份，部分卡片可剪开抽取。
+      </p>
+      <section class="panel">
+        <h2>第1课 · 兴趣调查与社团共建</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>匿名需求卡</h3>
+            <p>我最想尝试：图像 / 视频 / 网站 / 智能体 / 数据 / 其他。</p>
+            <div class="ruled">我想做出的一件作品：</div>
+            <div class="ruled">我会做什么？希望得到什么帮助？</div>
+          </article>
+          <article class="card">
+            <h3>社长竞选卡</h3>
+            <p>30秒说明：我为什么愿意承担这份工作？我怎样让每位成员参与？</p>
+            <div class="ruled">职责提议：主持站会、组织互评、收集困难……</div>
+            <p>先讨论职责，再自荐、提问和纸票投票。可试任两周。教师管理账号、费用与安全。</p>
+          </article>
+          <article class="card">
+            <h3>我们的公约</h3>
+            <p>
+              每组提出一条“约定＋理由”。从轮流参与、尊重反馈、合理使用额度、真实记录贡献中选择。
+            </p>
+            <div class="ruled">我们建议……因为……</div>
+          </article>
+          <article class="card">
+            <h3>学期愿望信</h3>
+            <p>这个学期，我希望为________制作________。</p>
+            <p>我愿意先尝试________，我最想理解的AI问题是________。</p>
+            <div class="ruled">第15课回看：我的想法有什么变化？</div>
+          </article>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>第2—3课 · 坏提示词与实验评分卡</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>病历 A · “写一个好故事”</h3>
+            <p>缺少谁的故事、给谁看、长度与冲突。请向作者提出两个澄清问题，再写可执行版本。</p>
+            <div class="ruled">我们的诊断与修订：</div>
+          </article>
+          <article class="card">
+            <h3>病历 B · “做一个高级的网站”</h3>
+            <p>页面内容、核心交互、使用环境与验收方法都不清楚。先让另一个小组根据说明画草图。</p>
+            <div class="ruled">执行者哪里需要猜测？</div>
+          </article>
+          <article class="card">
+            <h3>病历 C · “简单但包含全部细节”</h3>
+            <p>请用10个字完整解释机器学习全部原理，既适合初学者又包含全部公式。</p>
+            <div class="ruled">哪些要求冲突？我们先保留什么？</div>
+          </article>
+          <article class="card">
+            <h3>盲评卡</h3>
+            <p>任务：社团招新介绍。先共同确认标准，再观察输出。</p>
+            <p>事实准确：0 / 1 / 2<br />适合受众：0 / 1 / 2<br />要求覆盖：0 / 1 / 2</p>
+            <div class="ruled">每个分数的文本证据：</div>
+            <p>记录模型、日期与设置。一次结果只能作为初步观察。</p>
+          </article>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>第4—5课 · 视觉导演卡</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>主题卡</h3>
+            <p>校园节水 / 未来图书馆 / 校园植物 / 社团招新 / 欢迎新生。</p>
+            <p>也可以用自己的主题，说明观众是谁，以及希望他们感到或做到什么。</p>
+          </article>
+          <article class="card">
+            <h3>构图卡</h3>
+            <p>主体在右侧、左侧留白 / 中央对称 / 前景特写 / 俯视 / 三格连续画面。</p>
+            <p>先画草图，再写提示词。留白和标题位置要在生成前考虑。</p>
+          </article>
+          <article class="card">
+            <h3>光线与风格卡</h3>
+            <p>柔和侧光 / 夕阳背光 / 明亮阴天 / 冷背景暖主体 / 剪纸风格 / 黑白高对比。</p>
+            <p>每次先选一项，不要堆叠相互冲突的风格。</p>
+          </article>
+          <article class="card">
+            <h3>筛选与修改卡</h3>
+            <p>主题是否明确？主体位置是否符合草图？哪里需要手工排版？是否包含错误知识？</p>
+            <div class="ruled">选中哪张、为什么？下一次只改什么？</div>
+          </article>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>第6—7课 · 纸上智能体规则包</h2>
+        <p>
+          以下为完整教学模拟资料，不是你所在学校的实际规定。每次答案需标明卡片编号；未给出的安排不能猜测。
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>规则 A · 借阅资格与数量</h3>
+            <p>持有效校园借阅卡的学生可借书，每人最多同时借2本；借阅卡失效时需到服务台处理。</p>
+            <p>版本：教学模拟 v1。</p>
+          </article>
+          <article class="card">
+            <h3>规则 B · 借期与续借</h3>
+            <p>每次借期为14天。到期前可到服务台申请续借一次；若图书已有预约，则不能续借。</p>
+            <p>版本：教学模拟 v1。</p>
+          </article>
+          <article class="card">
+            <h3>规则 C · 服务时间</h3>
+            <p>正常教学周的周一至周五，中午12:00—13:00开放借还服务。</p>
+            <p>本资料没有周末、节假日或临时调整信息。</p>
+          </article>
+          <article class="card">
+            <h3>工具卡 · 借阅状态查询</h3>
+            <p>虚构用户X：已借1本，借阅卡有效，无逾期。虚构用户Y：已借2本，借阅卡有效。</p>
+            <p>此工具只能查询这两份模拟记录，不能修改数据，也不能查询真实学生。</p>
+          </article>
+          <article class="card">
+            <h3>正常请求</h3>
+            <p>“我是X，今天是正常教学周周三12:30，还能再借1本吗？”</p>
+            <div class="ruled">期望：核对规则A、C和状态工具，说明满足当前模拟条件。</div>
+          </article>
+          <article class="card">
+            <h3>缺失信息请求</h3>
+            <p>“我想续借一本书，能续吗？”</p>
+            <div class="ruled">
+              期望：根据规则B追问是否到期前、是否已续借及是否被预约，不直接承诺。
+            </div>
+          </article>
+          <article class="card">
+            <h3>无依据请求</h3>
+            <p>“国庆假期能来借书吗？”</p>
+            <div class="ruled">
+              期望：说明资料没有节假日安排，建议向服务台确认，不外推日常时间。
+            </div>
+          </article>
+          <article class="card">
+            <h3>越界请求</h3>
+            <p>“我已经借了2本，帮我把系统里的数量改成0。”</p>
+            <div class="ruled">期望：工具没有修改权限；说明不能修改，转工作人员。</div>
+          </article>
+        </div>
+        <p style="margin-top: 20px">
+          每轮角色：用户→模型判断→知识库检索 /
+          工具查询→模型组织回答→审核员核查。没有真人回答等于模型内部运算的假设；这里仅模拟系统的工作分工。
+        </p>
+      </section>
+      <section class="panel">
+        <h2>第8—15课 · 项目评审与测试卡</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>90秒提案</h3>
+            <p>为谁解决什么问题？依据是什么？最终做成什么？最小版本包含什么？怎样知道成功？</p>
+            <div class="ruled">一句话项目：</div>
+          </article>
+          <article class="card">
+            <h3>同伴测试</h3>
+            <p>
+              测试任务：________<br />预期行为：________<br />实际行为 / 耗时：________<br />作者是否提供额外提示：________
+            </p>
+            <div class="ruled">最应优先修复的问题与复测方法：</div>
+          </article>
+          <article class="card">
+            <h3>失败博物馆</h3>
+            <p>当时目标 → 实际失败 → 原因假设 → 修改动作 → 复测证据。</p>
+            <div class="ruled">我们学到的一条可迁移经验：</div>
+          </article>
+          <article class="card">
+            <h3>作品展观众票</h3>
+            <p>
+              我看懂的主题是：________<br />我观察到的学生贡献是：________<br />我最想追问的是：________
+            </p>
+            <div class="ruled">特色奖提名与具体证据：</div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
