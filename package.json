@@ -1,0 +1,14 @@
+{
+  "name": "ai-innovation-club",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-interactions.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
